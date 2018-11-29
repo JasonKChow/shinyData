@@ -15,7 +15,7 @@ ui <- fluidPage(theme = 'style.css',
   # Title
   fluidRow(
     column(4, titlePanel('Shiny Data Example')),
-    column(8, HTML('Data: <a>www.google.com</a>'))
+    column(8, HTML('<a href="https://www.google.com"><b>Raw Data</b></a>'))
   ),
   
   # Plot row
