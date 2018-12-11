@@ -7,7 +7,8 @@ load('exEnv.RData')
 # Helper function to convert console outputs into text string
 consolePrint <- function(expr) {
   txt <- capture.output(expr) %>% paste(collapse = '</br>')
-  gsub('\t', '&nbsp;&nbsp;&nbsp;&nbsp;', txt)
+  txt <- gsub('\t', '&nbsp;&nbsp;&nbsp;&nbsp;', txt)
+  gsub(' ', '&nbsp;', txt)
 }
 
 #### UI ####
